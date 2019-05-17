@@ -10,6 +10,18 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "gulp": "^4.0.2"
+    "autoprefixer": "^9.5.1",
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-watch": "^5.0.1",
+    "postcss-import": "^12.0.1",
+    "postcss-nested": "^4.1.2",
+    "postcss-simple-vars": "^5.0.2"
+  },
+  "dependencies": {
+    "browser-sync": "^2.26.5",
+    "graceful-fs": "^4.1.15",
+    "jquery": "^3.4.1",
+    "normalize.css": "^8.0.1"
   }
 }

@@ -1,30 +1,41 @@
 .large-hero {
-  position: relative;
-
-  &__text-content {
+    position: relative;
+    
+    &__text-content {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
     left: 0;
+    /*定位之后由于是块级，直接伸展到父元素100%，然后居中*/
     width: 100%;
     text-align: center;
-  }
+    /*垂直居中：下移动50%父元素距离，然后向上移动自身50%距离*/
+    top: 50%;
+    transform: translateY(-50%);
+    }
 
-  &__title {
-    font-weight: 300;
-    color: #2f5572;
-    font-size: 4.8rem;
-  }
+    &__title {
+        margin: 0;
+        font-weight: 300;
+        color:$mainBlue;
+        font-size: 4.8rem;
+    }
 
-  &__subtitle {
-    font-weight: 300;
-    color: #2f5572;
-    font-size: 2.9rem;
-  }
-
+    &__subtitle {
+        margin: 0;
+        font-weight: 300;
+        color:$mainBlue;
+        font-size: 2.8rem;
+    }
+    
+    &__description {
+        color: #FFF;
+        font-size: 1.875rem;
+        font-weight: 100;
+        text-shadow: 2px 2px 0 rgba(0,0,0,.1);
+        max-width: 30rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
-
-
 
 
 
