@@ -1,0 +1,24 @@
+.row {
+    @mixin clearfix;
+
+    &__4 {
+    float:left;
+    width: 33.33%;
+    }
+
+     /*解决一侧padding的好方法，不会影响计算宽度的总长度*/
+    /*在父元素上设置上overflow hidden*/
+    &--gutters {
+       margin-right: -65px;
+     }
+
+    &--gutters>div {
+         padding-right: 65px ;
+    }
+
+    &__8 {
+         float: right;
+         width: 66.66%;
+     }
+
+}

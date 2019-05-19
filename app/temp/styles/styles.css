@@ -359,6 +359,10 @@ img {
   height: auto;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .large-hero {
     position: relative;
     border-bottom: 10px solid #2f5572;
@@ -489,12 +493,115 @@ img {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+    overflow:hidden;
+
 }
 
+.wrapper--medium {
+    max-width: 976px;
+     }
+
+.wrapper .wrapper {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+@media(min-width:530px){
+
 .page-section {
-    padding: 4.5rem;
+    padding: 1.2rem 0
 }
+    }
+
+@media(min-width:800px){
+
+.page-section {
+        padding: 4.5rem 0
+}
+    }
 
 .page-section--blue {
         background-color: #2f5572;
     }
+
+.headline {
+    font-weight: 300;
+    font-size: 1.4rem;
+    color: #2f5572;
+
+
+}
+
+@media(min-width:530px){
+
+.headline {
+        font-size: 2.875rem
+
+
+}
+    }
+
+.headline--centered {
+    text-align: center;
+    }
+
+.headline--orange {
+    color: #d59541;
+    }
+
+.headline--small {
+    font-size: 1.2rem;
+
+
+    }
+
+@media(min-width:530px){
+
+.headline--small {
+        font-size: 1.875rem
+
+
+    }
+    }
+
+.headline--narrow {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+.headline--b-margin-small {
+        margin-bottom: .5em;
+    }
+
+.headline--b-margin-large {
+        margin-bottom: 1.6em;
+ }
+
+.row::after{
+    content: "";
+    clear:both;
+    display: table;
+}
+
+.row__4 {
+    float:left;
+    width: 33.33%;
+    }
+
+/*在父元素上设置上overflow hidden*/
+
+.row--gutters {
+       margin-right: -65px;
+     }
+
+/*解决一侧padding的好方法，不会影响计算宽度的总长度*/
+
+.row--gutters>div {
+         padding-right: 65px ;
+    }
+
+.row__8 {
+         float: right;
+         width: 66.66%;
+     }
