@@ -7,7 +7,7 @@ gulp.task('scripts', function (done) {
             console.log(err.toString());
         }
         // console.log(stats.toString());
-        // console.log("Mission completed!");
+        console.log("Mission completed!");
     });
     done();
 });
